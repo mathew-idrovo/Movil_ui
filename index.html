@@ -37,7 +37,9 @@
           </p>
         </div>
         <section class="main-tables-container">
-          <div class="main-currency-table">
+          <input type="radio" name="toggleTable" id="showTable1" checked />
+          <input type="radio" name="toggleTable" id="showTable2" />
+          <div class="main-currency-table" id="table1">
             <p class="currency-table--title">Monedas</p>
             <div class="currency-table--container">
               <table>
@@ -63,11 +65,17 @@
                 </tr>
               </table>
             </div>
+            <label for="showTable2" class="table-go-right">
+              <img
+                src="assets/icons/mdi_keyboard_arrow_down.svg"
+                alt="arrow_next"
+              />
+            </label>
             <div class="currency-table--date">
               <p><b>Actualizado:</b> 19 Julio 23:45</p>
             </div>
           </div>
-          <div class="main-comissions-table">
+          <div class="main-comissions-table" id="table2">
             <p class="comissions-table--title">Comisiones</p>
             <div class="comissions-table--container">
               <table>
@@ -93,6 +101,12 @@
                 </tr>
               </table>
             </div>
+            <label for="showTable1" class="table-go-right">
+              <img
+                src="assets/icons/mdi_keyboard_arrow_down.svg"
+                alt="arrow_next"
+              />
+            </label>
             <div class="comissions-table--date">
               <p><b>Actualizado:</b> 19 Julio 23:45</p>
             </div>
