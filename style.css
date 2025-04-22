@@ -265,9 +265,8 @@ main {
 }
 .table-go-right {
   position: absolute;
-  right: -30px;
-  transform: translate(50%, -50%);
-
+  right: -35px;
+  top: 50%;
   width: 32px;
   height: 32px;
   background: var(--just-white);
@@ -277,4 +276,12 @@ main {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+.main-product-detail {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding: 20px 10px;
+  background-color: var(--black);
 }
